@@ -1,27 +1,16 @@
-<section id="search">
-  <form action="" class="example-form">
-    <mat-form-field class="example-form-field" appearance="fill">
-      <mat-label>Search</mat-label>
-      <input type="text" matInput placeholder="">
-      <button matSuffix mat-icon-button aria-label="Search" >
-        <mat-icon>search</mat-icon>
-      </button>
-    </mat-form-field>
-  </form>
-</section>
 <section id="container">
   <div id="celsius" class="child">
-    <p>24°C</p>
+    <p>{{weather.main.temp}}°C</p>
     <hr>
   </div>
   <div id="fahrenheit" class="child">
-    <p>67°F</p>
+    <p>{{weather.main.temp | number: '1.0-0'}}°F</p>
   </div>
   <div id="city" class="child">
-    <p>City Name</p>
+    <p>{{weather.name}}</p>
   </div>
   <div id="description" class="child">
-    <p>Short description or data</p>
+    <span class="temp"><img src="assets/{{weather.weather[0].icon}}.png" alt="01.png"></span>
   </div>
 </section>
 
