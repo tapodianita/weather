@@ -1,0 +1,57 @@
+#search{
+    margin: auto;
+    .example-form{
+      display: flex;
+      flex-direction: row;
+      margin: auto;
+      width: 25%;
+      justify-content: center;
+      .example-form-field{
+        margin-top: 15%;
+      }
+    }
+  }
+  #container{
+    margin: auto;
+    display: flex;
+    width: 75%;
+    height: 80%;
+    flex-direction: column;
+    align-items: center;
+    //background: linear-gradient(rgba(255, 235, 20, 0.92), rgba(52, 0, 198, 0.93));
+    background: rgba(255,255,255,0.3);
+    .child{
+      height: 200px;
+      width: 200px;
+      p{
+        text-align: center;
+      }
+    }
+    #celsius{
+      padding-top: 7%;
+      flex: 1;
+      font-family: "Bodoni MT Black";
+      font-size: 2.5rem;
+      color: #fffefe;
+    }
+    #fahrenheit{
+      flex: 1;
+      font-family: "Bodoni MT Black";
+      font-size: 2rem;
+      font-weight: lighter;
+      color: #fffefe;
+    }
+    #city{
+      flex: 1;
+      font-family: 'Red Hat Display', sans-serif;
+      font-size: 2rem;
+      color: #fffefe;
+    }
+    #description{
+      flex: 1;
+      font-family: 'Red Hat Display', sans-serif;
+      font-size: 2rem;
+      color: #fffefe;
+    }
+  }
+
