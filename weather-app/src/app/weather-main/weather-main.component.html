@@ -1,10 +1,9 @@
 <section id="container">
   <div id="celsius" class="child">
     <p>{{weather.main.temp}}°C</p>
-    <hr>
   </div>
   <div id="fahrenheit" class="child">
-    <p>{{weather.main.temp | number: '1.0-0'}}°F</p>
+    <p>{{(weather.main.temp * 1.8) + 32}}°F</p>
   </div>
   <div id="city" class="child">
     <p>{{weather.name}}</p>
