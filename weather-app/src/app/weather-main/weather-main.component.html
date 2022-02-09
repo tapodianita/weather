@@ -1,0 +1,15 @@
+<section id="container">
+  <div id="celsius" class="child">
+    <p>{{weather.main.temp}}°C</p>
+  </div>
+  <div id="fahrenheit" class="child">
+    <p>{{ weather.main.temp | fahrenheit}}°F</p>
+  </div>
+  <div id="city" class="child">
+    <p>{{weather.name}}</p>
+  </div>
+  <div id="description" class="child">
+    <span class="temp"><img src="../assets/weatherIcons/{{weather.weather[0].icon}}.png" alt="weather icon"></span>
+  </div>
+</section>
+
