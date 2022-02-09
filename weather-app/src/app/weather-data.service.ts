@@ -16,6 +16,6 @@ export class WeatherDataService{
       .set('appid', this.apiKey)
 
     return this.http.get(this.url, {params});
-}
+  }
 
 }

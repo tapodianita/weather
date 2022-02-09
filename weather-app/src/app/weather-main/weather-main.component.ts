@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Pipe} from '@angular/core';
 import {WeatherDataService} from "../weather-data.service";
 
 @Component({
@@ -6,17 +6,19 @@ import {WeatherDataService} from "../weather-data.service";
   templateUrl: './weather-main.component.html',
   styleUrls: ['./weather-main.component.scss']
 })
+
 export class WeatherMainComponent implements OnInit {
-  lat
-  lon
-  weather
+  lat;
+  lon;
+  weather;
 
   constructor(private weatherDataService: WeatherDataService) { }
 
   ngOnInit(): void {
     this.getLocation();
   }
-getLocation(){
+
+  getLocation(){
     if("geolocation" in navigator){
       navigator.geolocation.watchPosition((success)=>{
         this.lat = success.coords.latitude;
